@@ -7,14 +7,13 @@ import streamlit as st
 # --- Load model, vectorizer, dan dataset ---
 model = joblib.load("naive_bayes_model.pkl")
 vectorizer = joblib.load("tfidf_vectorizer.pkl")
-df = pd.read_csv("dataset_chatbot.csv")  # pastikan kolom 'pertanyaan', 'intent', 'jawaban' ada
+df = pd.read_csv(
+    "dataset_chatbot.csv"
+)  # pastikan kolom 'pertanyaan', 'intent', 'jawaban' ada
 
-# Buat mapping intent → jawaban (mengambil jawaban pertama dari setiap intent sebagai fallback)
-intent_to_answer = (
-    df.drop_duplicates(subset=["intent"])
-    .set_index("intent")["jawaban"]
-    to_dict()
-)
+# Buat mapping intent → jawaban (diperbaiki agar tidak error sintaks)
+unique_df = df.drop_duplicates(subset=["intent"])
+intent_to_answer = dict(zip(unique_df["intent"], unique_df["jawaban"]))
 
 # Simpan vector corpus buat similarity search
 corpus_vec = vectorizer.transform(df["pertanyaan"]).toarray()
@@ -23,10 +22,10 @@ corpus_answers = df["jawaban"].tolist()
 
 
 def chatbot_predict(text: str, threshold=0.35):
-  # Normalisasi dasar tanpa merusak fitur vectorizer (cukup lowercase dan strip)
+  # Normalisasi dasar
   clean_text = text.lower().strip()
 
-  # Penanganan khusus untuk sapaan (greetings) agar tidak nyasar ke pendaftaran
+  # Penanganan khusus untuk sapaan (greetings)
   greetings = ["hallo", "halo", "hai", "selamat pagi", "selamat siang", "pagi"]
   if clean_text in greetings:
     return (
@@ -36,7 +35,7 @@ def chatbot_predict(text: str, threshold=0.35):
         1.0,
     )
 
-  # Transformasi teks langsung menggunakan vectorizer (sesuai saat training di Colab)
+  # Transformasi teks menggunakan vectorizer
   X = vectorizer.transform([clean_text])
   pred = model.predict(X)[0]
 
@@ -46,21 +45,17 @@ def chatbot_predict(text: str, threshold=0.35):
     proba = model.predict_proba(X)[0]
     conf = float(np.max(proba))
 
-  # Jika confidence di atas threshold ATAU skor similarity sangat tinggi, gunakan intent
-  # Jika tidak, cari kemiripan teks terdekat menggunakan Cosine Similarity
+  # Hitung Cosine Similarity dengan corpus
   sim_scores = cosine_similarity(X, corpus_vec)[0]
   max_sim = float(np.max(sim_scores))
 
   if conf >= threshold or max_sim >= 0.3:
-    # Jika kemiripan kalimat sangat tinggi langsung ke pertanyaan spesifik di corpus
     if max_sim >= 0.5:
       idx = np.argmax(sim_scores)
       answer = corpus_answers[idx]
     else:
-      # Gunakan jawaban berdasarkan intent
       answer = intent_to_answer.get(pred, corpus_answers[np.argmax(sim_scores)])
   else:
-    # Fallback jika pertanyaan di luar konteks / tidak dikenali
     answer = (
         "Maaf, saya kurang memahami pertanyaan Anda. Silakan tanyakan hal"
         " lain seputar KRS, skripsi, jadwal ujian, atau administrasi Fakultas"
