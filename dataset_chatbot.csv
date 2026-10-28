@@ -1,57 +1,54 @@
 pertanyaan,jawaban,intent
-"Bisakah daftar kuliah secara online?","Informasi lengkap seputar pendaftaran mahasiswa baru dapat dilihat di website resmi https://admission.unisba.ac.id","pendaftaran"
-"Apa betul ada jalur beasiswa saat pendaftaran?","Informasi lengkap seputar pendaftaran dan jalur beasiswa dapat dilihat di https://admission.unisba.ac.id","pendaftaran"
-"Dimana lokasi pendaftaran mahasiswa baru?","Informasi lengkap seputar pendaftaran dapat dilihat di https://admission.unisba.ac.id","pendaftaran"
-"Apakah syarat mahasiswa pindahan?","Akreditasi kampus sebelumnya harus setara dan mahasiswa melakukan registrasi sesuai alur PMB di https://admission.unisba.ac.id","pendaftaran"
-"Bagaimana cara mendaftar kuliah di Fakultas Hukum Unisba?","Pendaftaran dilakukan secara online melalui portal resmi PMB Unisba di https://admission.unisba.ac.id","pendaftaran"
-"Apa syarat masuk FH Unisba?","Syarat pendaftaran meliputi ijazah SMA/SMK/MA sederajat, nilai rapor, pas foto, serta mengikuti seleksi masuk online melalui https://admission.unisba.ac.id","pendaftaran"
-"Berapa biaya kuliah di Fakultas Hukum Unisba?","Rincian biaya kuliah per semester dapat diakses melalui portal PMB Unisba di https://admission.unisba.ac.id atau menghubungi bagian keuangan universitas.","pendaftaran"
-"Apakah ada jalur prestasi untuk pendaftaran?","Ya, Unisba menyediakan jalur PMB tanpa tes berdasarkan nilai rapor atau prestasi akademik maupun non-akademik.","pendaftaran"
-"Kapan pendaftaran mahasiswa baru dibuka?","Pendaftaran biasanya dibuka dalam beberapa gelombang mulai awal tahun hingga menjelang tahun akademik baru melalui https://admission.unisba.ac.id","pendaftaran"
-"Apakah ada tes tertulis untuk jalur mandiri?","Seleksi jalur mandiri dilakukan sesuai ketentuan PMB Unisba yang diumumkan pada portal pendaftaran online.","pendaftaran"
-"Bagaimana cara cek pengumuman kelulusan PMB?","Pengumuman hasil seleksi mahasiswa baru dapat dicek langsung melalui akun masing-masing di https://admission.unisba.ac.id","pendaftaran"
-"Apakah ijazah Paket C bisa digunakan mendaftar di FH Unisba?","Ya, ijazah Paket C yang terakreditasi dan memenuhi syarat usia/ketentuan dapat digunakan untuk mendaftar.","pendaftaran"
-"Apakah pengisian KRS bisa dilakukan secara online?","KRS dapat dilakukan secara online melalui menu SIAKAD di sifo.unisba.ac.id","krs"
-"Gimana jika lupa mengisi KRS?","Jika lupa mengisi KRS, silakan segera menghubungi bagian akademik fakultas atau operator SIAKAD","krs"
-"Apakah KRS perlu diserahkan ke fakultas?","Tidak perlu diserahkan secara fisik, cukup diisi secara online di SISFO setelah berkonsultasi dengan dosen wali","krs"
-"Mohon info, apakah ada denda jika terlambat krs?","Tidak ada denda, namun keterlambatan pengisian harus dilaporkan segera ke bagian akademik","krs"
-"Apakah KRS bisa diubah setelah disetujui?","KRS bisa diubah setelah disetujui dengan melakukan batal-tambah pada menu SIAKAD selama masa perbaikan","krs"
-"Bagaimana cara mengisi KRS online?","Pengisian KRS dilakukan secara online melalui portal SIAKAD (sifo.unisba.ac.id) pada menu KRS setelah berkonsultasi dengan dosen wali.","krs"
-"Kapan jadwal pengisian KRS semester baru?","Jadwal pengisian KRS diumumkan di kalender akademik SIAKAD sebelum perkuliahan semester baru dimulai.","krs"
-"Bagaimana jika mata kuliah tidak muncul di SIAKAD saat KRS?","Jika mata kuliah tidak muncul, silakan konsultasikan dengan dosen wali atau operator akademik fakultas hukum.","krs"
-"Berapa batas maksimal SKS yang bisa diambil?","Batas maksimal SKS ditentukan berdasarkan IP semester sebelumnya (biasanya antara 18 hingga 24 SKS).","krs"
-"Apa arti status KRS disetujui?","Artinya KRS Anda sudah diverifikasi oleh dosen wali dan sah digunakan untuk mengikuti perkuliahan semester tersebut.","krs"
-"Bagaimana cara melihat daftar dosen wali?","Nama dosen wali dapat dilihat langsung pada profil akun SIAKAD masing-masing mahasiswa.","krs"
-"Apa betul ada biaya bimbingan skripsi?","Biaya bimbingan skripsi sudah termasuk pada biaya pendaftaran sidang munaqasyah","skripsi"
-"Tanggal berapa mahasiswa bisa mengambil skripsi?","Untuk jadwal pengambilan mata kuliah skripsi dapat dilihat di kalender akademik sisfo.unisba.ac.id","skripsi"
-"Kapan mahasiswa bisa mengambil skripsi?","Mahasiswa bisa mengambil skripsi setelah lulus minimal 120 SKS dan lulus mata kuliah prasyarat seperti Metodologi Penelitian Hukum (MPH)","skripsi"
-"Apa syarat minimal SKS untuk mengambil skripsi?","Mahasiswa dapat mengambil mata kuliah skripsi setelah menempuh minimal 120 SKS dan lulus mata kuliah prasyarat.","skripsi"
-"Bagaimana cara mendaftar seminar proposal skripsi?","Pendaftaran seminar proposal dapat dilakukan melalui SIAKAD setelah mendapat persetujuan dosen pembimbing dan melengkapi berkas ke bagian akademik.","skripsi"
-"Berapa lama batas waktu pengerjaan skripsi?","Pengerjaan skripsi diselesaikan dalam satu semester berjalan; jika belum selesai dapat dilakukan perpanjangan studi sesuai ketentuan.","skripsi"
-"Apakah sidang skripsi berbayar?","Biaya pendaftaran sidang skripsi sudah termasuk dalam ketentuan administrasi akhir studi di bagian keuangan universitas.","skripsi"
-"Bagaimana prosedur pengajuan dosen pembimbing skripsi?","Pengajuan atau penentuan dosen pembimbing skripsi dikoordinasikan melalui Ketua Program Studi (Kaprodi) Hukum.","skripsi"
-"Apa syarat untuk pendaftaran sidang munaqasyah?","Syarat sidang meliputi naskah skripsi yang disetujui pembimbing, transkrip nilai minimal 120 SKS, bebas pustaka, dan sertifikat penunjang.","skripsi"
-"Berapa orang dosen penguji saat sidang skripsi?","Sidang munaqasyah biasanya diuji oleh tim penguji yang terdiri dari ketua sidang, sekretaris, dan penguji utama.","skripsi"
-"Bagaimana cara mendaftar wisuda setelah lulus sidang?","Pendaftaran wisuda dilakukan melalui portal SISFO/SIAKAD setelah seluruh tahapan revisi skripsi disetujui dan disahkan.","skripsi"
-"Apakah UAS perlu cetak kartu ujian?","Kartu ujian merupakan syarat wajib dan mutlak untuk bisa mengikuti ujian di ruang kelas","ujian"
-"Dimana lokasi ujian dilaksanakan?","Lokasi ujian akan diumumkan beserta jadwal resmi ujian di portal SIAKAD","ujian"
-"Bagaimana cara melihat nilai UAS?","Nilai dapat dilihat di SISFO pada menu SIAKAD, Anda juga dapat mencetak transkrip nilai sementara","ujian"
-"Apakah ada ujian perbaikan?","Untuk perbaikan nilai atau remedi, silakan menghubungi dosen pengampu mata kuliah yang bersangkutan","ujian"
-"Bagaimana cara melihat jadwal ujian UTS atau UAS?","Jadwal resmi ujian UTS dan UAS dapat dilihat melalui akun SIAKAD masing-masing mahasiswa.","ujian"
-"Apakah kartu ujian wajib dicetak saat UTS/UAS?","Ya, kartu ujian wajib dicetak sebagai tanda bukti sah peserta ujian.","ujian"
-"Apakah ada ujian susulan jika berhalangan hadir saat ujian?","Ujian susulan dapat diajukan dengan melampirkan surat keterangan sah (seperti surat dokter) ke bagian akademik paling lambat 3 hari.","ujian"
-"Bagaimana jika nilai SIAKAD belum keluar?","Jika nilai belum keluar, silakan tanyakan kepada dosen pengampu mata kuliah atau koordinasikan dengan bagian akademik.","ujian"
-"Apakah ada beasiswa untuk mahasiswa berprestasi?","Informasi terkait beasiswa dapat dilihat melalui website resmi fakultas hukum fh.unisba.ac.id","administrasi"
-"Kapan jadwal pengajuan beasiswa dibuka?","Informasi terkait jadwal pengajuan beasiswa diumumkan melalui website fakultas hukum fh.unisba.ac.id","administrasi"
-"Adakah perpanjangan batas akhir pembayaran?","Silakan dapat menghubungi bagian keuangan atau Kasi Keuangan Fakultas Hukum Unisba","administrasi"
-"Dimana mengambil surat keterangan lulus?","Surat keterangan lulus dapat diurus dengan menghubungi Kasi Akademik Fakultas Hukum","administrasi"
-"Dimana letak kantor Tata Usaha Fakultas Hukum Unisba?","Kantor Tata Usaha (TU) Fakultas Hukum Unisba terletak di gedung Fakultas Hukum lantai 1.","administrasi"
-"Bagaimana cara mengurus cuti kuliah?","Pengajuan cuti kuliah dilakukan melalui SIAKAD dengan melampirkan surat permohonan ke bagian administrasi dan melunasi biaya cuti.","administrasi"
-"Bagaimana cara meminta Surat Keterangan Aktif Kuliah?","Surat Keterangan Aktif Kuliah dapat diajukan melalui bagian pelayanan administrasi akademik fakultas hukum.","administrasi"
-"Jam berapa pelayanan kantor Tata Usaha FH Unisba buka?","Pelayanan Tata Usaha buka pada hari kerja Senin sampai Jumat pukul 08.00 hingga 16.00 WIB.","administrasi"
-"Kapan jadwal wisuda berikutnya?","Jadwal wisuda diumumkan secara resmi melalui portal akademik universitas setiap akhir semester.","wisuda"
-"Gimana cara cetak KTM mahasiswa?","Cetak KTM dapat dilakukan dengan datang langsung ke bagian akademik universitas di gedung pascasarjana Unisba","lainnya"
-"Apa betul ada grup WhatsApp untuk mahasiswa?","Untuk dapat bergabung dengan grup mahasiswa per angkatan dapat menghubungi layanan WhatsApp resmi fakultas","lainnya"
-"Bagaimana jika lupa password SIAKAD?","Jika lupa password SIAKAD, silakan hubungi bagian PSITEK di gedung dekanat lantai 4 atau melalui layanan pemulihan akun resmi.","lainnya"
-"Bagaimana cara ikut organisasi mahasiswa di FH Unisba?","Anda dapat bergabung dengan BEM, DPM, atau unit kegiatan mahasiswa (UKM) hukum dengan mengikuti open recruitment resmi.","lainnya"
-"Dimana lokasi perpustakaan Fakultas Hukum?","Perpustakaan Fakultas Hukum terletak di area gedung Fakultas Hukum Unisba lantai 2.","lainnya"
+halo,"Halo! Ada yang bisa saya bantu terkait informasi akademik, perkuliahan, KRS, atau skripsi di Fakultas Hukum Unisba?",lainnya
+hallo,Halo! Selamat datang di layanan informasi akademik Fakultas Hukum Unisba. Ada yang bisa saya bantu?,lainnya
+hai,"Hai! Silakan tanyakan informasi seputar perkuliahan, administrasi, atau layanan akademik FH Unisba.",lainnya
+selamat pagi,Selamat pagi! Ada yang ingin ditanyakan seputar kegiatan akademik di Fakultas Hukum Unisba?,lainnya
+selamat siang,Selamat siang! Ada yang bisa saya bantu terkait administrasi atau perkuliahan FH Unisba?,lainnya
+selamat sore,Selamat sore! Silakan sampaikan pertanyaan Anda seputar akademik Fakultas Hukum Unisba.,lainnya
+terima kasih,"Sama-sama! Jika ada hal lain yang ingin ditanyakan seputar akademik FH Unisba, silakan sampaikan ya.",lainnya
+terima kasih banyak,Dengan senang hati! Semoga sukses dengan studinya di Fakultas Hukum Unisba.,lainnya
+makasih,Sama-sama! Jangan ragu bertanya kembali jika membutuhkan informasi akademik lainnya.,lainnya
+oke,"Baik, ada hal lain seputar akademik Fakultas Hukum Unisba yang ingin didiskusikan?",lainnya
+baiklah,Baik. Silakan beri tahu jika ada pertanyaan lain seputar perkuliahan atau administrasi.,lainnya
+bagaimana cara mendaftar kuliah di fakultas hukum unisba,Informasi lengkap seputar pendaftaran mahasiswa baru Fakultas Hukum Unisba dapat dilihat langsung di website resmi penerimaan mahasiswa baru pada laman https://admission.unisba.ac.id [cite: 0].,pendaftaran
+apa syarat masuk fh unisba,"Syarat pendaftaran meliputi ijazah SMA/SMK/MA sederajat, nilai rapor, pas foto, serta mengikuti seleksi masuk online melalui https://admission.unisba.ac.id [cite: 0].",pendaftaran
+berapa biaya kuliah di fh unisba,Rincian biaya kuliah per semester dan informasi keuangan dapat diakses melalui portal PMB Unisba di https://admission.unisba.ac.id [cite: 0] atau melalui bagian keuangan.,pendaftaran
+apakah ada jalur beasiswa saat pendaftaran,Informasi lengkap mengenai jalur beasiswa saat pendaftaran dapat dilihat di portal resmi https://admission.unisba.ac.id [cite: 0].,pendaftaran
+dimana lokasi pendaftaran mahasiswa baru,Lokasi atau informasi lengkap seputar pendaftaran mahasiswa baru dapat diakses secara online melalui https://admission.unisba.ac.id [cite: 0].,pendaftaran
+apakah syarat mahasiswa pindahan ke fh unisba,"Akreditasi kampus sebelumnya harus setara, telah menyelesaikan maksimal 2 semester dengan minimal 32 SKS, nilai huruf mutu C ke atas, dan IPK minimal 2,50 [cite: 207].",pendaftaran
+bagaimana cara mengisi krs online,"Pengisian KRS dilakukan secara online melalui portal SIAKAD di laman sisfo.unisba.ac.id pada menu FRS setelah melakukan perwalian dan konsultasi dengan dosen wali [cite: 56, 57].",krs
+apa itu perwalian akademik,Perwalian adalah proses awal kegiatan akademik setiap semester berupa konsultasi daring antara dosen wali dan mahasiswa untuk menentukan jumlah SKS dan mata kuliah yang akan diambil [cite: 57].,krs
+apa syarat agar bisa melakukan perwalian,"Mahasiswa wajib melakukan aktivasi dan membayar Infak Kuliah Tetap (IKT) terlebih dahulu sebelum melaksanakan perwalian [cite: 56, 59].",krs
+berapa batas maksimal sks yang bisa diambil berdasarkan ipk,"Batas maksimal SKS berdasarkan IPK: IPK >3,00-4,00 dapat mengambil 21-24 SKS; IPK >2,00-2,99 mengambil 18-20 SKS; IPK >1,00-1,99 mengambil 15-17 SKS; dan IPK 0,0-1,00 mengambil 12-14 SKS [cite: 58].",krs
+apakah krs bisa diubah setelah disetujui,"Ya, mahasiswa S1 dapat melakukan perubahan rencana studi (batal-tambah) secara online melalui SIAKAD dalam waktu 14 hari sejak dimulainya perkuliahan pertama [cite: 58].",krs
+apakah krs perlu diserahkan ke fakultas,"Tidak perlu diserahkan secara fisik, cukup diisi dan disetujui secara online di SIAKAD setelah berkonsultasi dengan dosen wali [cite: 57].",krs
+apa saja etika berpakaian mahasiswa saat kuliah,"Mahasiswi wajib mengenakan busana menutup aurat (rok/celana panjang tidak ketat, baju menutupi paha/pinggul, berlengan panjang, dan kerudung). Mahasiswa mengenakan celana panjang rapi, kemeja/kaos sopan, rambut tidak diwarnai dan rapi [cite: 60, 61].",administrasi
+apa pakaian saat ujian uts dan uas prodi s1,"Mahasiswi mengenakan kemeja putih berlengan panjang, rok panjang hitam tanpa belahan, jilbab hitam/putih, dan sepatu dominan hitam. Mahasiswa mengenakan kemeja putih berlengan panjang, celana panjang kain hitam (bukan jeans), rambut pendek rapi, dan sepatu dominan hitam [cite: 66, 67].",ujian
+berapa bobot 1 sks perkuliahan,"1 SKS perkuliahan terdiri atas: tatap muka 50 menit per minggu, penugasan terstruktur 60 menit per minggu, dan kegiatan mandiri 60 menit per minggu selama satu semester [cite: 59].",jadwal_kuliah
+berapa beban studi kumulatif prodi sarjana ilmu hukum,Beban studi kumulatif Prodi S1 Ilmu Hukum ditetapkan sebanyak 146 SKS yang dapat ditempuh dalam waktu 8 semester dengan batas maksimal 14 semester [cite: 60].,jadwal_kuliah
+bagaimana cara melihat nilai uas,"Nilai UAS dapat dilihat secara online melalui portal SISFO pada menu SIAKAD, di mana mahasiswa juga dapat mencetak transkrip nilai sementara [cite: 63].",ujian
+apa komponen penilaian hasil perkuliahan,"Penilaian hasil perkuliahan terdiri dari 30%-40% nilai UTS, 40%-50% nilai UAS, dan 20% nilai tugas, ditambah pengamatan dosen selama perkuliahan [cite: 73].",nilai
+apa saja huruf mutu dan bobot nilai di fh unisba,"Huruf mutu dan bobotnya: A=4,00 (79,50-100); A-=3,75 (75,50-79,49); B+=3,50 (71,50-75,49); B=3,00 (67,50-71,49); B-=2,75 (63,50-67,49); C+=2,50 (59,50-63,49); C=2,00 (55,50-59,49); D=1,00 (44,01-55,49); E=0,00 (0-44,00) [cite: 73, 74].",nilai
+bagaimana cara melakukan perbaikan nilai akhir untuk prodi s1,Mahasiswa Program Studi Ilmu Hukum dapat melakukan perbaikan nilai hanya melalui Semester Antara yang dilaksanakan antara semester ganjil dan genap [cite: 75].,nilai
+bagaimana ketentuan komplain nilai,Komplain nilai dapat dilakukan selambat-lambatnya 2 minggu setelah nilai diumumkan dengan menghubungi dosen pengampu dan membawa bukti-bukti komponen penilaian [cite: 77].,nilai
+apa syarat minimal sks untuk mengambil skripsi,"Mahasiswa S1 dapat mengajukan usulan penelitian/skripsi setelah menempuh dan lulus sekurang-kurangnya 126 SKS (untuk usulan penelitian) dan 142 SKS untuk sidang skripsi, dengan IPK minimal 2,50 [cite: 183].",skripsi
+apa saja syarat sidang skripsi,"Syarat sidang skripsi meliputi lulus 142 SKS, semua mata kuliah bernilai minimal C, IPK minimal 2,50, persetujuan pembimbing, sertifikat PPMB, pesantren mahasiswa, bela negara, serta bukti upload SPeSIA [cite: 183, 184].",skripsi
+berapa kali bimbingan skripsi yang disyaratkan,Bimbingan skripsi dilaksanakan secara intensif dengan dosen pembimbing minimal 6 kali bimbingan setelah seminar usulan penelitian dinyatakan layak [cite: 184].,skripsi
+bagaimana ketentuan cuti akademik,"Cuti akademik diberikan paling banyak 2 kali selama masa studi (tidak boleh di tahun pertama dan tidak boleh sekaligus), diajukan secara tertulis kepada Rektor melalui Dekan [cite: 204].",administrasi
+apa akibat jika mahasiswa tidak aktif berturut turut,Mahasiswa yang tidak aktif berturut-turut selama 4 semester akan dianggap mengundurkan diri [cite: 204].,administrasi
+kapan mahasiswa dinyatakan putus studi karena akademik,"Mahasiswa pada akhir semester 4 yang tidak mencapai IPK minimal 2,00 dan lulus minimal 45 SKS dinyatakan putus studi, atau batas masa studi maksimal 14 semester [cite: 207].",administrasi
+kapan fakultas hukum unisba berdiri,Fakultas Hukum Universitas Islam Bandung (Unisba) berdiri pada tahun 1971 sebagai kelanjutan dari perubahan nama Perguruan Islam Tinggi ke Universitas Islam Bandung [cite: 12].,lainnya
+apa saja program studi di fakultas hukum unisba,"Fakultas Hukum Unisba mengelola 4 program studi, yaitu: Program Studi Sarjana Ilmu Hukum (PSIH), Program Studi Magister Ilmu Hukum (MIH), Program Studi Magister Kenotariatan (MKn), dan Program Studi Doktor Ilmu Hukum (DIH) [cite: 13, 14, 15, 16].",lainnya
+siapa dekan fakultas hukum unisba saat ini,"Dekan Fakultas Hukum Unisba periode 2020-2024 dijabat oleh Dr. Efik Yusdiansyah, S.H., M.H. [cite: 27]",lainnya
+apa visi fakultas hukum unisba,"Visi Fakultas Hukum Unisba adalah terwujudnya Fakultas Hukum yang mandiri, maju, terkemuka, dan profesional berasaskan nilai-nilai Islam dan mampu menghadapi tantangan di Asia Tahun 2034 [cite: 17].",lainnya
+dimana letak kantor tata usaha fakultas hukum unisba,Kantor Tata Usaha (TU) Fakultas Hukum Unisba terletak di gedung Fakultas Hukum lantai 1 [cite: 31].,administrasi
+apa fungsi badan penjaminan mutu bpm fakultas,BPM Fakultas bertugas membantu Dekan dalam melaksanakan monitoring dan evaluasi kegiatan Tri Dharma Perguruan Tinggi di tingkat fakultas [cite: 32].,administrasi
+apa link perpustakaan online fakultas hukum unisba,Sistem informasi perpustakaan Fakultas Hukum Unisba dapat diakses melalui http://elibrary.hukum.unisba.ac.id dan perpustakaan pusat di http://www.elibrary.unisba.ac.id [cite: 51].,lainnya
+apa itu pbkh,"PBKH (Pusat Bantuan dan Konsultasi Hukum) adalah unit di bawah Fakultas Hukum yang memberikan pelayanan hukum dan penyuluhan hukum kepada masyarakat sebagai wujud Pengabdian kepada Masyarakat [cite: 51, 52].",lainnya
+bagaimana prosedur pembayaran uang kuliah bsi,"Pembayaran IKT, ISKS, atau IPU dapat dilakukan melalui Teller Bank BSI (nomor rekening 9005973 + NPM), ATM BSI (pilih menu pembayaran akademik, kode 5973 + NPM), atau Mobile Banking BSI [cite: 208].",administrasi
+apa saja organisasi kemahasiswaan di fakultas hukum unisba,"Organisasi kemahasiswaan terdiri dari Dewan Amanat Mahasiswa Fakultas (DAMF), Badan Eksekutif Mahasiswa Fakultas (BEMF), serta Himpunan Mahasiswa (HIMAPI, HIMAPER, HIMTANU, ILSF, HIMNO, dan DEMOCRACY) [cite: 41, 42, 43, 44, 52, 53].",lainnya
+berapa beban studi magister ilmu hukum,"Beban studi kumulatif Program Studi Magister Ilmu Hukum ditetapkan sebanyak 38 SKS yang dapat ditempuh dalam waktu 2 hingga 4 tahun [cite: 49, 118].",skripsi
+apa syarat ujian tesis magister,"Syarat ujian tesis meliputi lulus seluruh mata kuliah dengan IPK minimal 3,00, telah melaksanakan Seminar Kelayakan Tesis (SKT), menyerahkan bukti submit artikel jurnal, dan lunas administrasi keuangan [cite: 190].",skripsi
+berapa beban studi magister kenotariatan,Beban studi Program Studi Magister Kenotariatan (MKn) dirancang sebanyak 46 SKS [cite: 149].,skripsi
+berapa beban studi doktor ilmu hukum,"Beban studi Program Studi Doktor Ilmu Hukum ditetapkan 42 SKS untuk peserta linier dan 48 SKS untuk peserta non-linier, dengan masa studi 3 hingga 7 tahun [cite: 49, 166].",skripsi
+apa itu ujian kualifikasi doktor,"Ujian kualifikasi adalah ujian komprehensif tertulis untuk memperoleh status kandidat doktor, yang dilaksanakan selambat-lambatnya pada semester ke-5 [cite: 192].",skripsi
