@@ -1,32 +1,49 @@
-import joblib
-import numpy as np
+import re
 import pandas as pd
+from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
+from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import streamlit as st
 
-# --- Load model, vectorizer, dan dataset ---
-model = joblib.load("naive_bayes_model.pkl")
-vectorizer = joblib.load("tfidf_vectorizer.pkl")
-df = pd.read_csv(
-    "dataset_chatbot.csv"
-)  # pastikan kolom 'pertanyaan', 'intent', 'jawaban' ada
+# --- Load basis FAQ dan siapkan pencarian berdasarkan dataset aktif ---
+df = pd.read_csv("dataset_chatbot.csv")
+required_columns = {"pertanyaan", "jawaban", "intent", "sumber"}
+missing_columns = required_columns.difference(df.columns)
+if missing_columns:
+  raise ValueError(
+      "Kolom dataset chatbot tidak lengkap: " + ", ".join(sorted(missing_columns))
+  )
 
-# Buat mapping intent → jawaban (diperbaiki agar tidak error sintaks)
-unique_df = df.drop_duplicates(subset=["intent"])
-intent_to_answer = dict(zip(unique_df["intent"], unique_df["jawaban"]))
+if df[["pertanyaan", "jawaban", "intent"]].isna().any().any():
+  raise ValueError("Dataset chatbot memiliki pertanyaan, jawaban, atau intent kosong.")
 
-# Simpan vector corpus buat similarity search
-corpus_vec = vectorizer.transform(df["pertanyaan"]).toarray()
-corpus_texts = df["pertanyaan"].tolist()
-corpus_answers = df["jawaban"].tolist()
+stemmer = StemmerFactory().create_stemmer()
 
 
-def chatbot_predict(text: str, threshold=0.35):
-  # Normalisasi dasar
-  clean_text = text.lower().strip()
+def preprocess(text: str) -> str:
+  normalized = re.sub(r"[^a-z0-9\s]", " ", str(text).lower())
+  return " ".join(stemmer.stem(token) for token in normalized.split())
 
-  # Penanganan khusus untuk sapaan (greetings)
-  greetings = ["hallo", "halo", "hai", "selamat pagi", "selamat siang", "pagi"]
+
+vectorizer = TfidfVectorizer(
+    ngram_range=(1, 2),
+    sublinear_tf=True,
+    token_pattern=r"(?u)\b\w+\b",
+)
+corpus_vec = vectorizer.fit_transform(df["pertanyaan"].map(preprocess))
+corpus_answers = df["jawaban"].astype(str).tolist()
+corpus_intents = df["intent"].astype(str).tolist()
+corpus_sources = df["sumber"].fillna("").astype(str).tolist()
+
+FALLBACK_ANSWER = (
+    "Maaf, saya belum menemukan jawaban yang cukup relevan di basis informasi. "
+    "Coba perjelas pertanyaan dengan menyebutkan topik atau istilah akademiknya."
+)
+
+
+def chatbot_predict(text: str, threshold=0.40, min_margin=0.08):
+  clean_text = preprocess(text)
+  greetings = {"hallo", "halo", "hai", "selamat pagi", "selamat siang", "pagi"}
   if clean_text in greetings:
     return (
         "Halo! Ada yang bisa saya bantu terkait informasi akademik Fakultas"
@@ -35,34 +52,31 @@ def chatbot_predict(text: str, threshold=0.35):
         1.0,
     )
 
-  # Transformasi teks menggunakan vectorizer
-  X = vectorizer.transform([clean_text])
-  pred = model.predict(X)[0]
+  query_vec = vectorizer.transform([clean_text])
+  if query_vec.nnz == 0:
+    return FALLBACK_ANSWER, "lainnya", 0.0
 
-  # Confidence dari Naive Bayes
-  conf = 0.0
-  if hasattr(model, "predict_proba"):
-    proba = model.predict_proba(X)[0]
-    conf = float(np.max(proba))
+  similarity_scores = cosine_similarity(query_vec, corpus_vec).ravel()
+  best_idx = int(similarity_scores.argmax())
+  best_score = float(similarity_scores[best_idx])
 
-  # Hitung Cosine Similarity dengan corpus
-  sim_scores = cosine_similarity(X, corpus_vec)[0]
-  max_sim = float(np.max(sim_scores))
-
-  if conf >= threshold or max_sim >= 0.3:
-    if max_sim >= 0.5:
-      idx = np.argmax(sim_scores)
-      answer = corpus_answers[idx]
-    else:
-      answer = intent_to_answer.get(pred, corpus_answers[np.argmax(sim_scores)])
-  else:
-    answer = (
-        "Maaf, saya kurang memahami pertanyaan Anda. Silakan tanyakan hal"
-        " lain seputar KRS, skripsi, jadwal ujian, atau administrasi Fakultas"
-        " Hukum Unisba."
+  best_score_by_answer = {}
+  for answer, score in zip(corpus_answers, similarity_scores):
+    best_score_by_answer[answer] = max(
+        best_score_by_answer.get(answer, 0.0), float(score)
     )
 
-  return answer, pred, conf
+  distinct_answer_scores = sorted(best_score_by_answer.values(), reverse=True)
+  second_score = distinct_answer_scores[1] if len(distinct_answer_scores) > 1 else 0.0
+  if best_score < threshold or best_score - second_score < min_margin:
+    return FALLBACK_ANSWER, corpus_intents[best_idx], best_score
+
+  answer = corpus_answers[best_idx]
+  source = corpus_sources[best_idx]
+  if source:
+    answer = f"{answer}\n\nSumber: {source}"
+
+  return answer, corpus_intents[best_idx], best_score
 
 
 # --- Streamlit App ---
