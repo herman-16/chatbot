@@ -83,7 +83,7 @@ def chatbot_predict(text: str, threshold=0.40, min_margin=0.08):
 st.set_page_config(
     page_title="Chatbot Akademik FH Unisba", page_icon="🎓", layout="centered"
 )
-st.title("🤖 Chatbot Layanan Akademik - Fakultas Hukum Unisba")
+st.title("Tanyakan tentang Akademik Fakultas Hukum Unisba disini🎓")
 
 # Sidebar tools
 with st.sidebar:
